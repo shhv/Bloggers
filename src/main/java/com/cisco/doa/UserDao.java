@@ -14,24 +14,28 @@ public class UserDao {
 
 
 	public Users getUser( Integer id) {
-		Session ses = HibernateUtil.currentSession();
-		try {
-			Criteria crit =  ses.createCriteria(Users.class);
-			crit.add(Restrictions.idEq(id));
-			Users u = (Users)crit.uniqueResult();
-			return u;
-		} finally {
-			HibernateUtil.closeSession();
-		}
+		System.out.println("Checking for user: " + id + "\n");
+//		Session ses = HibernateUtil.currentSession();
+//		try {
+//			Criteria crit =  ses.createCriteria(Users.class);
+//			crit.add(Restrictions.idEq(id));
+//			Users u = (Users)crit.uniqueResult();
+//			return u;
+//		} finally {
+//			HibernateUtil.closeSession();
+//		}
+		return null;
 	}
 
 	public List<Users> getUsers() {
-		Session ses = HibernateUtil.currentSession();
-		try {
-			return ses.createCriteria(Users.class).list();
-		} finally {
-			HibernateUtil.closeSession();
-		}
+		System.out.println("get list of users");
+//		Session ses = HibernateUtil.currentSession();
+//		try {
+//			return ses.createCriteria(Users.class).list();
+//		} finally {
+//			HibernateUtil.closeSession();
+//		}
+		return null;
 	}
 	
 	

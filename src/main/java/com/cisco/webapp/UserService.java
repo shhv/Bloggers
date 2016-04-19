@@ -1,5 +1,6 @@
 package com.cisco.webapp;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.ws.rs.Consumes;
@@ -29,10 +30,29 @@ UserDao dao = new UserDao();
 		this.dao = dao;
 	}
 	@GET
-	@Path("/{param}")
+	@Path("check/{param}")
 	@Produces({MediaType.APPLICATION_JSON})
-	public Users getUser(@PathParam("param") Integer id) {
-		return dao.getUser(id);
+	public Users getUser(@PathParam("param") String param) {
+		System.out.println("check if : "+param+ " exists\n" );
+		Users newUser = new Users();
+		newUser.setEmailId("shhvemail");
+		newUser.setName("shhv");
+		newUser.setPassword("shhvpassword");
+		return newUser;
+	}
+	
+	@GET
+	@Path("blogs")
+	@Produces({MediaType.APPLICATION_JSON})
+	public List<Users> getUser() {
+		System.out.println("get blog contents" );
+		List<Users> listUser = new ArrayList<Users>();
+ 		Users newUser = new Users();
+		newUser.setEmailId("blogemail");
+		newUser.setName("blog");
+		newUser.setPassword("blogpassword");
+		listUser.add(newUser);
+		return listUser;
 	}
 	
 	@GET
@@ -43,18 +63,20 @@ UserDao dao = new UserDao();
 	
 	
 	@POST
+	@Path("/create")
 	@Consumes(MediaType.APPLICATION_JSON)
 	//public void createUser(@FormParam("name") String name,@FormParam("age") Integer age,@FormParam("emailId") String emailId){
 	public void createUser(Users u){
-		System.out.println("Creating user: "+u.getName()+" Age: "+u.getAge());
-		Session ses = HibernateUtil.currentSession();
-		try {
-			Transaction tx = ses.beginTransaction();
-			ses.save(u);
-			tx.commit();
-		}finally{
-			HibernateUtil.closeSession();
-		}
+		System.out.println("Creating user: "+u.getName());
+		
+//		Session ses = HibernateUtil.currentSession();
+//		try {
+//			Transaction tx = ses.beginTransaction();
+//			ses.save(u);
+//			tx.commit();
+//		}finally{
+//			HibernateUtil.closeSession();
+//		}
 	}
 	
 	@PUT

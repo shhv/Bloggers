@@ -11,22 +11,13 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 
+@SuppressWarnings("unused")
 public class Users {
 
-	private Integer id;
 	private String name="";
 	private String emailId="";
 	private String password="";
-	private Date joinDate=new Date();
-	private Integer age;
-	private String state="";
-
-	public Integer getId() {
-		return id;
-	}
-	public void setId(Integer id) {
-		this.id = id;
-	}
+	
 	public String getName() {
 		return name;
 	}
@@ -45,29 +36,11 @@ public class Users {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public Date getJoinDate() {
-		return joinDate;
-	}
-	public void setJoinDate(Date joinDate) {
-		this.joinDate = joinDate;
-	}
-	public Integer getAge() {
-		return age;
-	}
-	public void setAge(Integer age) {
-		this.age = age;
-	}
-	public String getState() {
-		return state;
-	}
+	
 	@Override
 	public String toString() {
-		return "Users [id=" + id + ", name=" + name + ", emailId=" + emailId
-				+ ", password=" + password + ", joinDate=" + joinDate
-				+ ", age=" + age + ", state=" + state + "]";
-	}
-	public void setState(String state) {
-		this.state = state;
+		return "Users [name=" + name + ", emailId=" + emailId
+				+ ", password=" + password + "]";
 	}
 
 }
