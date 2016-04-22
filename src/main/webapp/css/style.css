@@ -141,9 +141,9 @@ a {
 
 #signup-button:hover {
 	cursor: pointer;
-	background: #1E75AA;
+	background: #dfd7c6;
 }
 
 #signup-button:active {
-	background: #2180b7;
+	background: #dfd7c6;
 }

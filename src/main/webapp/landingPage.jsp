@@ -17,11 +17,8 @@
       </div>
       <div id="menu">
         <ul>
-          <li><a href="http://all-free-download.com/free-website-templates/" class="current">Home</a></li>
-          <li><a href="http://all-free-download.com/free-website-templates/">Blog</a></li>
-          <li><a href="http://all-free-download.com/free-website-templates/">Photo Gallery</a></li>
-          <li><a href="http://all-free-download.com/free-website-templates/">About</a></li>
-          <li><a href="http://all-free-download.com/free-website-templates/">Contact</a></li>
+          <li><a href="about.jsp">About</a></li>
+          <li><a href="contact.jsp">Contact</a></li>
         </ul>
       </div>
       <div id="content">
@@ -46,66 +43,10 @@
             <h1><span dir="ltr" id=":11g"><strong>Verification</strong></span> of XHTML and CSS</h1>
             <div class="publish_info">Post Date: 17-10-2020 · Tags: <a href="http://all-free-download.com/free-website-templates/">XHTML</a> · <a href="http://all-free-download.com/free-website-templates/">CSS</a> · <a href="http://all-free-download.com/free-website-templates/">Website Layouts</a></div>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc quis sem nec tellus blandit tincidunt. Duis vitae velit sed dui malesuada dignissim. </p>
-            <p><a target="_blank" href="http://validator.w3.org/check?uri=referer"><img style="border:0;width:88px;height:31px" src="http://www.w3.org/Icons/valid-xhtml10" alt="" width="88" height="31" vspace="8" border="0" /></a> <a target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px"  src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="" vspace="8" border="0" /></a><br />
-            </p>
             <div class="comment"><a href="http://all-free-download.com/free-website-templates/">Comments (12)</a></div>
           </div>
         </div>
-        <div id="right_column">
-          <div class="section">
-            <form method="get" action="http://all-free-download.com/free-website-templates/">
-              <input name="search" type="text" value="Search Anything"  id="keyword" />
-              <input type="submit" value="Go" class="button" />
-            </form>
-          </div>
-          <div class="section">
-            <div class="section1_top"></div>
-            <div class="section1_middle">
-              <h2>Categories</h2>
-              <ul>
-                <li><a href="http://all-free-download.com/free-website-templates/">&raquo; Vestibulum dapibus tortor</a></li>
-                <li><a href="http://all-free-download.com/free-website-templates/">&raquo; Cum sociis natoque penatibus</a></li>
-                <li><a href="http://all-free-download.com/free-website-templates/">&raquo; Lorem ipsum dolor sit amet</a></li>
-                <li><a href="http://all-free-download.com/free-website-templates/">&raquo; Cras urna metus, feugiat non</a></li>
-                <li><a href="http://all-free-download.com/free-website-templates/">&raquo; Free CSS Layouts</a></li>
-              </ul>
-            </div>
-            <div class="section1_bottom"></div>
-          </div>
-          <div class="section">
-            <div class="section2_top"></div>
-            <div class="section2_middle">
-              <h2>Archives</h2>
-              <ul>
-                <li><a href="http://all-free-download.com/free-website-templates/">&raquo; Suspendisse potenti</a></li>
-                <li><a href="http://all-free-download.com/free-website-templates/">&raquo; Aliquam tristique lacus</a></li>
-                <li><a href="http://all-free-download.com/free-website-templates/">&raquo; Duis pulvinar scelerisque ante</a></li>
-                <li><a href="http://all-free-download.com/free-website-templates/">&raquo; Maecenas aliquam</a></li>
-                <li><a href="http://all-free-download.com/free-website-templates/">&raquo; Vestibulum quis pede</a></li>
-              </ul>
-            </div>
-            <div class="section2_bottom"></div>
-          </div>
-          <div class="section">
-            <div class="section3_top"></div>
-            <div class="section3_middle">
-              <h2>Quick Links</h2>
-              <ul>
-                <li><a href="http://all-free-download.com/free-website-templates/">&raquo; External Web Link One</a></li>
-                <li><a href="http://all-free-download.com/free-website-templates/">&raquo; Website Link Two</a></li>
-                <li><a href="http://all-free-download.com/free-website-templates/">&raquo; Friend Website Link</a></li>
-                <li><a href="http://all-free-download.com/free-website-templates/">&raquo; Flash Templates</a></li>
-                <li><a href="http://all-free-download.com/free-website-templates/">&raquo; Free CSS Templates</a></li>
-              </ul>
-            </div>
-            <div class="section3_bottom"></div>
-          </div>
-        </div>
       </div>
-      <div id="bottom"></div>
-      <div id="footer"> <a href="http://all-free-download.com/free-website-templates/">Home</a> | <a href="http://all-free-download.com/free-website-templates/">FAQs</a> | <a href="http://all-free-download.com/free-website-templates/">Terms of Use</a> | <a href="http://all-free-download.com/free-website-templates/">Privacy Policy</a> | <a href="http://all-free-download.com/free-website-templates/">Contact Us</a> <br />
-        Copyright © 2008 <a href="http://all-free-download.com/free-website-templates/">Your Company Name</a> | Designed by <a href="http://www.templatemo.com">templatemo.com</a> </div>
-    </div>
   </div>
 </div>
 <div align=center>This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div></body>
