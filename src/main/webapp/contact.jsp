@@ -16,12 +16,13 @@
 			<ul>
 				<li><a href="landingPage.jsp">Home</a></li>
 				<li><a href="about.jsp">About</a></li>
+				<li><a href="index.jsp">Logout</a></li>
 			</ul>
 		</div>
 		<div id="content">
 			<div id="left_column">
 				<div class="postbody">
-					<h1>Content</h1>
+					<h1>Contact</h1>
 					<p>fasfgdsgdfgdf</p>
 				</div>
 			</div>

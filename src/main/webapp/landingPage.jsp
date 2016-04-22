@@ -19,6 +19,7 @@
         <ul>
           <li><a href="about.jsp">About</a></li>
           <li><a href="contact.jsp">Contact</a></li>
+          <li><a href="index.jsp">Logout</a></li>
         </ul>
       </div>
       <div id="content">
