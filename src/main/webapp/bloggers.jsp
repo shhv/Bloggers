@@ -13,6 +13,7 @@
 		</div>
 		<div id="menu">
 			<ul>
+				<li><a href="landingPage.jsp">Home</a></li>
 				<li><a href="about.jsp">About</a></li>
 				<li><a href="contact.jsp">Contact</a></li>
 				<li><a href="index.jsp">Logout</a></li>
@@ -23,9 +24,6 @@
 			<img alt="leaves" src="images/leaves.gif" id="leftImg" />
 			<p>Basics is my second submission to this site. It is open
 				source, so use it as you please. I called it basics because it is a
-				basic design and easy to make modifications to it. Photo credit to
-				stock.xchng. No restrictions were put on this image for usage. Big
-				thank you to DimP for helping me clean it up a little. Hope you
 				enjoy the template.</p>
 			<em>This page validates on the W3C page.</em> <img alt=""
 				src="images/leaves.gif" id="rightImg" />
@@ -33,24 +31,12 @@
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed
 				ut dui ac lacus egestas vehicula. Quisque faucibus, risus id
 				consequat porta, orci ligula condimentum mi, ac commodo leo libero
-				eget tortor. Maecenas a ligula in nibh luctus gravida. Praesent
-				vehicula rhoncus tortor. Donec porta rutrum dui. Donec dignissim
-				congue mauris. Sed rhoncus laoreet sem. Nam dui pede, vestibulum
-				convallis, posuere ut, dictum eu, diam. Phasellus nunc. Ut eget ante
-				a ipsum porttitor scelerisque. Quisque auctor elit vitae massa.
 				Vestibulum massa risus, gravida quis, hendrerit sit amet, bibendum
 				sit amet, enim. Fusce nulla. Quisque vulputate metus vitae orci.</p>
 			<h2>Lorem ipsum</h2>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed
 				ut dui ac lacus egestas vehicula. Quisque faucibus, risus id
 				consequat porta, orci ligula condimentum mi, ac commodo leo libero
-				eget tortor. Maecenas a ligula in nibh luctus gravida. Praesent
-				vehicula rhoncus tortor. Donec porta rutrum dui. Donec dignissim
-				congue mauris. Sed rhoncus laoreet sem. Nam dui pede, vestibulum
-				convallis, posuere ut, dictum eu, diam. Phasellus nunc. Ut eget ante
-				a ipsum porttitor scelerisque. Quisque auctor elit vitae massa.
-				Vestibulum massa risus, gravida quis, hendrerit sit amet, bibendum
-				sit amet, enim. Fusce nulla. Quisque vulputate metus vitae orci.
 				Pellentesque at arcu. Ut sed neque.</p>
 		</div>
 		<form action="/html/tags/html_form_tag_action.cfm" method="post">

@@ -8,7 +8,7 @@ function getdata(){
         	console.log(data);
         	var rowTemplate = $("#templates table").html();
 			console.log("template:" + rowTemplate);
-				alert(JSON.stringify(data));
+				console.log(JSON.stringify(data));
 				for(index in data) {
 				var row = rowTemplate.replace("name",data[index].name)
 							.replace("emailId",data[index].emailId)
