@@ -12,8 +12,8 @@ body {
 	background: #604a40;
 }
 
-a:link, a:visited { color: #3e3939; text-decoration: none; } 
-a:active, a:hover { color: #cc0000;}
+a:link, a:visited { color: #cc0000; text-decoration: none; } 
+a:active, a:hover { color: #fb5b18;}
 
 h1 {
 	margin: 0px;
@@ -243,8 +243,8 @@ img {
 
 /* ----- Post ------ */
 .postbody {
-	padding: 0px;
-	margin-bottom: 40px;
+	padding: 1px;
+	margin-bottom: 80px;
 	border-bottom: 1px dotted #333333;
 }
 
