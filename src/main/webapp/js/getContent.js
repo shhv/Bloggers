@@ -17,4 +17,5 @@ function getdata(){
 				}
 },
 });
+	window.location = "landingPage.jsp";
 }

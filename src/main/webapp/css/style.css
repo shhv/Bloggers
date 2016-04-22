@@ -3,7 +3,7 @@
     font-weight:400;
 }
 body {
-	background: #EEE;
+	background: #c3b595 url(images/content_bg.jpg) no-repeat;
 	font-family: Georgia, serif;
 }
 
@@ -29,13 +29,13 @@ a {
 	height: 35px;
 	text-align: center;
 	line-height: 35px;
-	background: #5A7710;
+	background: #dfd7c6;
 	color: #FFF;
 	-webkit-transition: background 0.3s;
 }
 
 #tabs ul li#loginbutton {
-	background: #7BA31C;
+	background: #c3b595;
 }
 
 #tabs ul li:hover {
@@ -47,7 +47,7 @@ a {
 	width: 360px;
 	height: 310px;
 	outline: none;
-	background: #7BA31C;
+	background: #604a40;
 	box-shadow: 0px 0px 10px #6D6D6D;
 	margin-top: -13.5px;
 }
@@ -100,7 +100,7 @@ a {
 	width: 360px;
 	margin-left: 20px;
 	margin-top: -15px;
-	color: #FFF;
+	color: #c3b595;
 	font-size: 13px;
 }
 
@@ -108,7 +108,7 @@ a {
 	width: 80px;
 	height: 40px;
 	border: none;
-	background: #2180b7;
+	background: #c3b595;
 	color: #FFF;
 	border-radius: 5px;
 	font-family: Georgia, serif;
@@ -118,11 +118,11 @@ a {
 
 #login-button:hover {
 	cursor: pointer;
-	background: #1E75AA;
+	background: #dfd7c6;
 }
 
 #login-button:active {
-	background: #2180b7;
+	background: #dfd7c6;
 }
 
 
@@ -131,7 +131,7 @@ a {
 	width: 80px;
 	height: 40px;
 	border: none;
-	background: #2180b7;
+	background: #c3b595;
 	color: #FFF;
 	border-radius: 5px;
 	font-family: Georgia, serif;
