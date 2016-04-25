@@ -5,11 +5,13 @@
 <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
 <link rel="stylesheet" type="text/css" href="css/initial.css" />
 <link rel="stylesheet" type="text/css" href="css/basics.css" />
+<script type="text/javascript" src="scripts/jquery-2.1.3.js"></script>
+<script src="js/comment.js"></script>
 </head>
 <body>
-	<div id="outer">
+	<div class="outerClass" id="outer">
 		<div id="hdr">
-			<h1>Basics</h1>
+			<h1 id="title">Basics</h1>
 		</div>
 		<div id="menu">
 			<ul>
@@ -39,10 +41,9 @@
 				consequat porta, orci ligula condimentum mi, ac commodo leo libero
 				Pellentesque at arcu. Ut sed neque.</p>
 		</div>
-		<form action="/html/tags/html_form_tag_action.cfm" method="post">
-			<textarea name="comments" id="comment">Comment here!</textarea>
+		<form name="myform" onSubmit="JavaScript:execute()">
+			<textarea name="comments" id="comment"></textarea>
 			<div id="comment-button">
-			<br>
 			<br>
 			<input type="submit" value="Submit"/> 
 			</div>

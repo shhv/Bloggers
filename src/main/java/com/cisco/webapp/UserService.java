@@ -41,11 +41,40 @@ UserDao dao = new UserDao();
 		return newUser;
 	}
 	
+	
+	@GET
+	@Path("create/{param}")
+	@Produces({MediaType.APPLICATION_JSON})
+	public Users getQuery(@PathParam("param") String param) {
+		System.out.println("check if : "+param+ " exists\n" );
+		Users newUser = new Users();
+		newUser.setEmailId("shhvemail");
+		newUser.setName("shhv");
+		newUser.setPassword("shhvpassword");
+		return newUser;
+	}
+	
 	@GET
 	@Path("blogs")
 	@Produces({MediaType.APPLICATION_JSON})
 	public List<Users> getUser() {
 		System.out.println("get blog contents" );
+		List<Users> listUser = new ArrayList<Users>();
+ 		Users newUser = new Users();
+		newUser.setEmailId("blogemail");
+		newUser.setName("blog");
+		newUser.setPassword("blogpassword");
+		listUser.add(newUser);
+		return listUser;
+	}
+	
+	
+	@GET
+	@Path("title/{param}")
+	@Produces({MediaType.APPLICATION_JSON})
+	public List<Users> getTitle(@PathParam("param") String param) {
+		System.out.println("check if : "+param+ " exists\n" );
+		System.out.println("get individual blog contents" );
 		List<Users> listUser = new ArrayList<Users>();
  		Users newUser = new Users();
 		newUser.setEmailId("blogemail");
@@ -68,16 +97,36 @@ UserDao dao = new UserDao();
 	//public void createUser(@FormParam("name") String name,@FormParam("age") Integer age,@FormParam("emailId") String emailId){
 	public void createUser(Users u){
 		System.out.println("Creating user: "+u.getName());
-		
-//		Session ses = HibernateUtil.currentSession();
-//		try {
-//			Transaction tx = ses.beginTransaction();
-//			ses.save(u);
-//			tx.commit();
-//		}finally{
-//			HibernateUtil.closeSession();
-//		}
 	}
+	
+	@POST
+	@Path("check")
+	@Consumes(MediaType.APPLICATION_JSON)
+	//public void createUser(@FormParam("name") String name,@FormParam("age") Integer age,@FormParam("emailId") String emailId){
+	public void checkUser(loginCheck data){
+		System.out.println("check if : "+data.getpostEmail()+ " exists\n" );
+	}
+	
+	@POST
+	@Path("createQuery")
+	@Consumes(MediaType.APPLICATION_JSON)
+	//public void createUser(@FormParam("name") String name,@FormParam("age") Integer age,@FormParam("emailId") String emailId){
+	public void createQuery(Query query){
+		System.out.println("create: "+query.getquery()+ " exists\n" );
+
+	}
+	
+	
+	@POST
+	@Path("comment")
+	@Consumes(MediaType.APPLICATION_JSON)
+	//public void createUser(@FormParam("name") String name,@FormParam("age") Integer age,@FormParam("emailId") String emailId){
+	public void addComment(Comment comment){
+		System.out.println("check if : "+comment.gettitle()+ " exists\n" );
+		System.out.println("add : "+comment.getcomment()+ " exists\n" );
+	} 
+	
+	
 	
 	@PUT
 	@Consumes(MediaType.APPLICATION_JSON)
