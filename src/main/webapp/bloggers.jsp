@@ -7,12 +7,21 @@
 <link rel="stylesheet" type="text/css" href="css/basics.css" />
 <script type="text/javascript" src="scripts/jquery-2.1.3.js"></script>
 <script src="js/comment.js"></script>
+<script src="js/bloggers.js"></script>
 </head>
-<body>
+<body onload="execute()">
 	<div class="outerClass" id="outer">
-		<div id="hdr">
-			<h1 id="title">Basics</h1>
+		<div id="templateTitle" style="display: none;">
+			<div id="hdr">
+				<h1 id="title">headValue</h1>
+			</div>
 		</div>
+		<div id="addHead">
+			<div id="hdr" style="display: none;">
+				<h1 id="title"></h1>
+			</div>
+		</div>
+
 		<div id="menu">
 			<ul>
 				<li><a href="landingPage.jsp">Home</a></li>
@@ -22,31 +31,44 @@
 			</ul>
 		</div>
 		<div id="cont">
-			<h2>Back To Basics</h2>
-			<img alt="leaves" src="images/leaves.gif" id="leftImg" />
-			<p>Basics is my second submission to this site. It is open
-				source, so use it as you please. I called it basics because it is a
-				enjoy the template.</p>
-			<em>This page validates on the W3C page.</em> <img alt=""
-				src="images/leaves.gif" id="rightImg" />
-			<h2>Lorem ipsum</h2>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed
-				ut dui ac lacus egestas vehicula. Quisque faucibus, risus id
-				consequat porta, orci ligula condimentum mi, ac commodo leo libero
-				Vestibulum massa risus, gravida quis, hendrerit sit amet, bibendum
-				sit amet, enim. Fusce nulla. Quisque vulputate metus vitae orci.</p>
-			<h2>Lorem ipsum</h2>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed
-				ut dui ac lacus egestas vehicula. Quisque faucibus, risus id
-				consequat porta, orci ligula condimentum mi, ac commodo leo libero
-				Pellentesque at arcu. Ut sed neque.</p>
-		</div>
-		<form name="myform" onSubmit="JavaScript:execute()">
-			<textarea name="comments" id="comment"></textarea>
-			<div id="comment-button">
-			<br>
-			<input type="submit" value="Submit"/> 
+			<div id="templates" style="display: none;">
+				<p>description</p>
 			</div>
-		</form>
+
+			<div id="dataDescription">
+				<p></p>
+			</div>
+
+			<div class="commentClass" id="templatesComment"
+				style="display: none;">
+				<p>comment</p>
+			</div>
+
+			<div style="display: none;">
+				<p class="commentClass" id="commentDescription"></p>
+			</div>
+		</div>
+		<div id="formTemplate" style="display: none;">
+			<form name="myform" id="comment-form" method="get"
+				action="postBloggerComment.jsp?id=ID">
+				<textarea name="comments" id="comment"></textarea>
+				<div id="comment-button">
+					<br> <input type="submit" value="Submit" />
+				</div>
+			</form>
+		</div>
+		<div id="formId">
+			<form name="myform" method="get"
+				action="postBloggerComment.jsp?id=ID" id="comment-form"
+				style="display: none;">
+				<textarea name="comments" id="comment"></textarea>
+				<div id="comment-button">
+					<br> <input type="submit" value="Submit" />
+				</div>
+			</form>
+		</div>
+		</div>
 	</div>
+	</div>
+	</body>
 </html>

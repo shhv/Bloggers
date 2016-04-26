@@ -1,9 +1,13 @@
-function execute() {
-	var query = $("#comment").val();
-	var titleHdr = $("#title").text();
-	alert(query);
-	alert(titleHdr);
-	if (query == '' || titleHdr == '') {
+function executeComment() {
+	var myParam = location.search.split('id=')[1];
+	var data = formData.getAll();
+	alert(myParam);
+	alert($('#comment-form').serialize());
+	var param =  $("#comment").html();
+	alert(param);
+	alert($("#comment").text());
+	alert($("#comment").val());
+	if (param == '') {
 		alert("Cannot post empty query...!!!!!!");
 	} else {
 		$.ajax({
@@ -25,15 +29,5 @@ function execute() {
 	function handleData(status) {
 		console.log("data: " + status);
 		alert("Success");
-		// $.ajax({
-		// type : "GET",
-		// url : 'blog/user/create/query',
-		// dataType : "json",
-		// contentType : "application/json",
-		// success : function(data, status) {
-		// console.log(data);
-		//			
-		// },
-		// });
 	}
 }

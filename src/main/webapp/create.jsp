@@ -29,10 +29,11 @@
 			</div>
 		</div>
 		<form name="myform" onSubmit="JavaScript:execute()">
-			<textarea name="comments" id="comment"></textarea>
+			<b id="titletag">Title:</b><textarea name="title" id="title"></textarea>
+			<b id="descriptiontag">Description:</b><textarea name="comments" id="description"></textarea>
 			<div id="comment-button">
 			<br>
-			<input type="submit" value="Submit"/> 
+			<input id="Submit-button" type="submit" value="Submit"/> 
 			</div>
 		</form>
 	</div>

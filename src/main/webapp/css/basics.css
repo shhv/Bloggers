@@ -2,7 +2,7 @@
 
 body {
  margin: 40px 0;
- color: #333;
+ color: #c3b595;;
  background:#c47922;
  padding:0;
  font: 0.86em/1.6 Arial, Helvetica, sans-serif;
@@ -86,7 +86,7 @@ h2 {
  background:#694410;
  }
 #cont h2 {
- color: rgb(153, 102, 51);
+ color: #ff800015310251;
 }
 
 
@@ -97,6 +97,21 @@ h2 {
  padding: 1.5em;
  background:#ffffff;
  }
+ 
+ 
+#commentClass {
+	clear: both;
+	margin: 10px 0px 0px 0px;
+	width: 570px;
+	text-align: right;
+	padding: 5px 0px 5px 0px;
+	font-size: 11px;
+	font-weight: bold;
+	background: url(images/comment_icon.gif) left center no-repeat;
+	border: 2px dotted #ff0000; border-style: none none dotted; 
+}
+
+
 #comment h2 {
  color: rgb(153, 102, 51);
 }

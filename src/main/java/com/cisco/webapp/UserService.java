@@ -68,20 +68,56 @@ UserDao dao = new UserDao();
 		return listUser;
 	}
 	
+	@GET
+	@Path("titles")
+	@Produces({MediaType.APPLICATION_JSON})
+	public List<title> getTitles() {
+		System.out.println("get titles" );
+		List<title> listTitle = new ArrayList<title>();
+		title newTitle = new title();
+		newTitle.setTitle("This is the title");
+		newTitle.setDescription("This layout is provided as a free CSS template and this is designed by Saw Htoo exclusively for templatemo.com website. Feel free to edit and apply this template layout for your personal or commercial websites. You may put a credit link back to templatemo.com at the footer. Thank you.Duis pulvinar scelerisque ante. Morbi tristique, risus quis congue pulvinar, nisl nisi commodo diam, a porta nisi ligula ac massa. Vestibulum blandit lacus sed sapien. Nunc quis sem nec tellus blandit tincidunt.");
+		newTitle.setId(4);
+		newTitle.setvalue(5);
+		listTitle.add(newTitle);
+		
+		
+		newTitle = new title();
+		newTitle.setTitle("This is the title 2 ");
+		newTitle.setDescription("This layout is provided as a free CSS template and this is designed by Saw Htoo exclusively for templatemo.com website. Feel free to edit and apply this template layout for your personal or commercial websites. You may put a credit link back to templatemo.com at the footer. Thank you.Duis pulvinar scelerisque ante. Morbi tristique, risus quis congue pulvinar, nisl nisi commodo diam, a porta nisi ligula ac massa. Vestibulum blandit lacus sed sapien. Nunc quis sem nec tellus blandit tincidunt.");
+		newTitle.setId(5);
+		newTitle.setvalue(4);
+		listTitle.add(newTitle);
+		
+		
+		
+		newTitle = new title();
+		newTitle.setTitle("This is the title 3 ");
+		newTitle.setDescription("This layout is provided as a free CSS template and this is designed by Saw Htoo exclusively for templatemo.com website. Feel free to edit and apply this template layout for your personal or commercial websites. You may put a credit link back to templatemo.com at the footer. Thank you.Duis pulvinar scelerisque ante. Morbi tristique, risus quis congue pulvinar, nisl nisi commodo diam, a porta nisi ligula ac massa. Vestibulum blandit lacus sed sapien. Nunc quis sem nec tellus blandit tincidunt.");
+		newTitle.setId(6);
+		newTitle.setvalue(2);
+		listTitle.add(newTitle);
+		
+		return listTitle;
+	}
 	
 	@GET
 	@Path("title/{param}")
 	@Produces({MediaType.APPLICATION_JSON})
-	public List<Users> getTitle(@PathParam("param") String param) {
+	public individualTitle getTitle(@PathParam("param") String param) {
 		System.out.println("check if : "+param+ " exists\n" );
 		System.out.println("get individual blog contents" );
-		List<Users> listUser = new ArrayList<Users>();
- 		Users newUser = new Users();
-		newUser.setEmailId("blogemail");
-		newUser.setName("blog");
-		newUser.setPassword("blogpassword");
-		listUser.add(newUser);
-		return listUser;
+		List<String> comments = new ArrayList<String>();
+		individualTitle title = new individualTitle();
+		title.setTitle("This is title");
+		title.setDescription("This layout is provided as a free CSS template and this is designed by Saw Htoo exclusively for templatemo.com website. Feel free to edit and apply this template layout for your personal or commercial websites. You may put a credit link back to templatemo.com at the footer. Thank you.Duis pulvinar scelerisque ante. Morbi tristique, risus quis congue pulvinar, nisl nisi commodo diam, a porta nisi ligula ac massa. Vestibulum blandit lacus sed sapien. Nunc quis sem nec tellus blandit tincidunt.");
+		title.setId(Integer.parseInt(param));
+		comments.add("Comment 1");
+		comments.add("Comment 2");
+		comments.add("Comment 3");
+		comments.add("Comment 4");
+		title.setComments(comments);
+		return title;
 	}
 	
 	@GET
