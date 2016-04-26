@@ -50,8 +50,9 @@
 		</div>
 		<div id="formTemplate" style="display: none;">
 			<form name="myform" id="comment-form" method="get"
-				action="postBloggerComment.jsp?id=ID">
+				action="postBloggerComment.jsp">
 				<textarea name="comments" id="comment"></textarea>
+				<textarea name="title" id="value" style="display: none;" >ID</textarea>
 				<div id="comment-button">
 					<br> <input type="submit" value="Submit" />
 				</div>
@@ -59,9 +60,10 @@
 		</div>
 		<div id="formId">
 			<form name="myform" method="get"
-				action="postBloggerComment.jsp?id=ID" id="comment-form"
+				action="postBloggerComment.jsp" id="comment-form"
 				style="display: none;">
 				<textarea name="comments" id="comment"></textarea>
+				<textarea name="title" id="value" style="display: none;" >ID</textarea>
 				<div id="comment-button">
 					<br> <input type="submit" value="Submit" />
 				</div>

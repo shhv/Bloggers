@@ -1,13 +1,11 @@
 function executeComment() {
-	var myParam = location.search.split('id=')[1];
-	var data = formData.getAll();
-	alert(myParam);
-	alert($('#comment-form').serialize());
-	var param =  $("#comment").html();
-	alert(param);
-	alert($("#comment").text());
-	alert($("#comment").val());
-	if (param == '') {
+	var myParam = location.search.split('comments=')[1];
+	myParam = myParam.split('&')[0];
+	var title = location.search.split('title=')[1];
+	console.log("Comments : "+myParam);
+	
+	console.log("Add comment to title ID :"+title);
+	if (myParam == '' || title =='' ) {
 		alert("Cannot post empty query...!!!!!!");
 	} else {
 		$.ajax({
@@ -16,18 +14,18 @@ function executeComment() {
 			dataType : "json",
 			contentType : "application/json",
 			data : JSON.stringify({
-				title : titleHdr,
-				comment : query
+				title : title,
+				comment : myParam
 			}),
 			success : handleData(status),
 			error : function(xhr, status) {
 				console.log(status);
-				alert(status);
 			},
 		});
 	}
 	function handleData(status) {
 		console.log("data: " + status);
-		alert("Success");
+		alert("bloggers.jsp?id="+title);
+		window.location = "bloggers.jsp?id="+title;
 	}
 }

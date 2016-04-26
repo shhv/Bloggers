@@ -26,7 +26,7 @@ function execute() {
 				$("#dataDescription").append(row);
 				$("#addHead").append(rowHead);
 				$("#formId").append(rowForm);
-				alert(rowForm);
+				console.log(rowForm);
 				for (var i in array) {
 					var commentRow = commentDescription.replace("comment", array[i]);
 					$("#commentDescription").append(commentRow);
