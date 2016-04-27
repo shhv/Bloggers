@@ -22,8 +22,7 @@ $(document).ready(function() {
 		}
 		function handleData(status) {
 			console.log("data: " + status);
-			alert("Success");
-			window.location = "index2.jsp";
+			window.location = "landingPage.jsp";
 			// $.ajax({
 			// type : "GET",
 			// url : 'blog/user/check/email',

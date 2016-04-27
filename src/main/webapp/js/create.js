@@ -20,13 +20,11 @@ function execute() {
 			error : function(xhr, status) {
 				console.log(status);
 				console.log(xhr);
-				alert(status);
 			},
 		});
 	}
 	function handleData(status) {
 		console.log("data: " + status);
-		alert("Success");
 		window.location = "landingPage.jsp"
 	}
 };

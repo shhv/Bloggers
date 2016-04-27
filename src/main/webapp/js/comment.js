@@ -25,7 +25,6 @@ function executeComment() {
 	}
 	function handleData(status) {
 		console.log("data: " + status);
-		alert("bloggers.jsp?id="+title);
 		window.location = "bloggers.jsp?id="+title;
 	}
 }
