@@ -8,6 +8,13 @@
 <script type="text/javascript" src="scripts/jquery-2.1.3.js"></script>
 <script src="js/comment.js"></script>
 <script src="js/bloggers.js"></script>
+<style>
+        .dotted{
+          text-decoration: none; 
+          border-style: groove;
+          border-color: white;
+        }
+    </style>
 </head>
 <body onload="execute()">
 	<div class="outerClass" id="outer">
@@ -41,7 +48,7 @@
 
 			<div class="commentClass" id="templatesComment"
 				style="display: none;">
-				<p>comment</p>
+				<p class="dotted">comment</p>
 			</div>
 
 			<div style="display: none;">

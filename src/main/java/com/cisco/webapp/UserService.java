@@ -148,7 +148,7 @@ UserDao dao = new UserDao();
 	@Consumes(MediaType.APPLICATION_JSON)
 	//public void createUser(@FormParam("name") String name,@FormParam("age") Integer age,@FormParam("emailId") String emailId){
 	public void createQuery(Query query){
-		System.out.println("create: "+query.getquery()+ " exists\n" );
+		System.out.println("create: "+query.getPostTitle()+"\t\t "+ query.getPostAbout() +" exists\n" );
 
 	}
 	

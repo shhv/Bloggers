@@ -28,7 +28,8 @@
 				</div>
 			</div>
 		</div>
-		<form name="myform" onSubmit="JavaScript:execute()">
+		<form name="myform" method="get"
+				action="JavaScript:execute()">
 			<b id="titletag">Title:</b><textarea name="title" id="title"></textarea>
 			<b id="descriptiontag">Description:</b><textarea name="comments" id="description"></textarea>
 			<div id="comment-button">
