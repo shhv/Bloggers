@@ -108,9 +108,20 @@ h2 {
 	font-size: 11px;
 	font-weight: bold;
 	background: url(images/comment_icon.gif) left center no-repeat;
-	border: 2px dotted #ff0000; border-style: none none dotted; 
+	border: 1px dotted #ff0000; border-style: none none dotted; 
 }
 
+#desClass {
+	clear: both;
+	margin: 10px 0px 0px 0px;
+	width: 570px;
+	text-align: right;
+	padding: 5px 0px 5px 0px;
+	font-size: 11px;
+	font-weight: bold;
+	background: url(images/comment_icon.gif) left center no-repeat;
+	border: 2px dashed #ff0000; border-style: none none dotted; 
+}
 
 #comment h2 {
  color: rgb(153, 102, 51);

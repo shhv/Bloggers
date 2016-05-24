@@ -23,8 +23,8 @@ $(function() {
 });
 </script>
 </head>
-<body onload="getTitles()">
-	<div id="container_wrapper1">
+<body>
+	<div ng-controller="WelcomeController" id="container_wrapper1">
 		<div id="container_wrapper2">
 			<div id="container">
 				<div id="header">
@@ -32,28 +32,23 @@ $(function() {
 				</div>
 				<div id="menu">
 					<ul>
-						<li><a href="create.jsp">New</a></li>
-						<li><a href="about.jsp">About</a></li>
-						<li><a href="contact.jsp">Contact</a></li>
-						<li><a href="index.jsp">Logout</a></li>
+						<li><a ng-click="Create()">New</a></li>
+						<li><a ng-click="About()">About</a></li>
+						<li><a ng-click="Contact()">Contact</a></li>
+						<li><a ng-click="Logout()">Logout</a></li>
 					</ul>
 				</div>
 				<div id="content">
 					<div id="left_column">
-						<div class="postbody" id="templates" style="display: none;">
+						<div class="postbody" id="templates" ng-repeat="t in titles">
 							<div>
-								<h1><a id="Content" href="bloggers.jsp?id=ID">title</a></h1>
+								<h1><a id="Content" ng-click="Blog(t)">{{t.title}}</a></h1>
 							</div>
-							<p>description</p>
+							<p>{{t.description}}</p>
 							<div class="comment">
-								Comments(value)
+								Comments({{t.value}})
 							</div>
 						</div>
-						<div style="display: none;">
-								<h1><a id="Content" href="bloggers.jsp?id=ID">title3</a></h1>
-						</div>
-						<p id="dataDescription"></p>
-						<div class="comment" style="display: none;"></div>
 					</div>
 					<div id="right_column">
 					<div class="postbody">

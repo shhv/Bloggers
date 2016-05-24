@@ -6,7 +6,7 @@
 <!--[if lt IE 7]><style type="text/css">div { behavior: url(iepngfix.htc); }</style><![endif]-->
 </head>
 <body>
-	<div id="container">
+	<div ng-controller="ContactController" id="container">
 	<div id="header">
         <div id="logo">
           <div id="site_slogan">free CSS website template</div>
@@ -14,9 +14,9 @@
       </div>
 		<div id="menu">
 			<ul>
-				<li><a href="landingPage.jsp">Home</a></li>
-				<li><a href="about.jsp">About</a></li>
-				<li><a href="index.jsp">Logout</a></li>
+				<li><a ng-click="HomeNav()">Home</a></li>
+				<li><a ng-click="About()">About</a></li>
+				<li><a ng-click="Logout()">Logout</a></li>
 			</ul>
 		</div>
 		<div id="content">

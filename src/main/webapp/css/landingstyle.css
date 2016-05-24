@@ -196,10 +196,10 @@ img {
 }
 
 #titletag, #descriptiontag {
-	width: 100px;
+	width: 90px;
 	font-family: Georgia, serif;
 	color: #ffffff;
-	margin-left: 1px;
+	margin-left: 0px;
 }
 
 #Submit-button {

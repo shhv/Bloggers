@@ -8,7 +8,7 @@
 <script src="js/create.js"></script>
 </head>
 <body>
-	<div id="container">
+	<div ng-controller="CreateController" id="container">
 		<div id="header">
 			<div id="logo">
 				<div id="site_slogan">free CSS website template</div>
@@ -16,9 +16,9 @@
 		</div>
 		<div id="menu">
 			<ul>
-				<li><a href="landingPage.jsp">Home</a></li>
-				<li><a href="contact.jsp">Contact</a></li>
-				<li><a href="index.jsp">Logout</a></li>
+				<li><a ng-click="HomeNav()">Home</a></li>
+				<li><a ng-click="Contact()">Contact</a></li>
+				<li><a ng-click="Logout()">Logout</a></li>
 			</ul>
 		</div>
 		<div id="content">
@@ -30,11 +30,11 @@
 		</div>
 		<form name="myform" method="get"
 				action="JavaScript:execute()">
-			<b id="titletag">Title:</b><textarea name="title" id="title"></textarea>
-			<b id="descriptiontag">Description:</b><textarea name="comments" id="description"></textarea>
+			<b id="titletag">Title:</b><textarea name="title" id="title" ng-model="post.title"></textarea>
+			<b id="descriptiontag">Description:</b><textarea name="comments" id="description" ng-model="post.description"></textarea>
 			<div id="comment-button">
 			<br>
-			<input id="Submit-button" type="submit" value="Submit"/> 
+			<input id="Submit-button" type="Button" value="Submit" ng-click="Submit(post)"/> 
 			</div>
 		</form>
 	</div>
